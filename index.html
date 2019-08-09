@@ -7,7 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <title>Document</title>
+    
+    <script type="text/javascript" src="javascript/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="javascript/game.js"></script>
+    <title>Memory Game</title>
 </head>
 
 <body>
@@ -36,7 +39,7 @@
             <div class="row justify-content-center fill">
                 <div class="col-4">
                     <div class="shape">
-                        <img id="circle" src="images/circle.png"></img>
+                        <img id="circle" class="off" src="images/circle.png"></img>
                     </div>
                 </div>
             </div>
@@ -44,17 +47,17 @@
             <div class="row justify-content-center fill">
                 <div class="col-4">
                     <div class="shape">
-                        <img id="diamond" src="images/diamond.png"></img>
+                        <img id="diamond" class="off" src="images/diamond.png"></img>
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="shape">
-                        <img id="star" src="images/star.png"></img>
+                        <img id="star" class="off" src="images/star.png"></img>
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="shape">
-                        <img id="heart" src="images/heart.png"></img>
+                        <img id="heart" class="off" src="images/heart.png"></img>
                     </div>
                 </div>
             </div>
@@ -62,12 +65,12 @@
             <div class="row justify-content-center fill">
                 <div class="col-4">
                     <div class="shape">
-                        <img id="four_point" src="images/four_point.png"></img>
+                        <img id="four_point" class="off" src="images/four_point.png"></img>
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="shape">
-                        <img id="triangle" src="images/triangle.png"></img>
+                        <img id="triangle" class="off" src="images/triangle.png"></img>
                     </div>
                 </div>
             </div>

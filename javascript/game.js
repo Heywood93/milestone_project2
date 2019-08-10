@@ -29,11 +29,9 @@ function play() {
     }
 }
 
-function pressShape(shape) {
-    list2[m] = shape;
-    console.log(list2[m]);
-    console.log(list1[m]);
-    /*if (list2[m] == list1[m]) {
+function pressShape(id) {
+    list2[m] = id;
+    if (list2[m] == list1[m]) {
         m += 1;
         score += 10*(1+(list1.length/20));
         console.log(score);
@@ -42,7 +40,7 @@ function pressShape(shape) {
         }
     } else {
         gameOver();
-    }*/
+    }
 }
 
 function gameOver() {

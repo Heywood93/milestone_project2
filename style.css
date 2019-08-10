@@ -6,6 +6,14 @@ header {
     margin-top: 30px;
 }
 
+rules {
+    display: none;
+}
+
+main {
+    height: 85vh;
+}
+
 .row {
     margin: 0;
 }

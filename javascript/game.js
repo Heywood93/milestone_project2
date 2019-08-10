@@ -22,7 +22,7 @@ function play() {
     n += 1;
     
     for (i = 0; i < list1.length; i++) {
-        console.log(list1[i])
+        console.log(list1[i]);
         el[i] = document.getElementById(list1[i]);
         setTimeout(on, 1500 * (i + 1), el[i]);
         setTimeout(off, 1500 * (i + 1) + 1500, el[i]);
@@ -41,7 +41,7 @@ function pressShape(id) {
             play();
         }
     } else {
-        console.log(gameOver());
+        console.log(gameOver(score));
     }
 }
 

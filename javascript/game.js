@@ -30,6 +30,8 @@ function play() {
 }
 
 function pressShape(id) {
+    on(document.getElementById(id))
+    setTimeout(off, 500, document.getElementById(id));
     list2[m] = id;
     if (list2[m] == list1[m]) {
         m += 1;
@@ -39,7 +41,7 @@ function pressShape(id) {
             play();
         }
     } else {
-        gameOver();
+        console.log(gameOver());
     }
 }
 

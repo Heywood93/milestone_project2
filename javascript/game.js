@@ -2,17 +2,9 @@ var shapes = ["circle", "diamond", "star", "heart", "four_point", "triangle"];
 var list1 = new Array();
 var list2 = new Array();
 var n = 0;
-var m = 0;
+var m = -1;
 var el = new Array();
 var score = 0;
-
-function on(element) {
-    element.classList.remove("off");
-}
-
-function off(element) {
-    element.classList.add("off");
-}
 
 function play() {
     list2= [];
@@ -30,21 +22,35 @@ function play() {
 }
 
 function pressShape(id) {
+    m += 1
     on(document.getElementById(id))
     setTimeout(off, 500, document.getElementById(id));
     list2[m] = id;
+    console.log(m);
+    console.log(list1);
+    console.log(list2);
     if (list2[m] == list1[m]) {
-        m += 1;
-        score += 10*(1+(list1.length/20));
+        score += 10*(1+(list1.length/10));
+        $(".score #num").html(score);
         console.log(score);
         if (list2.length == list1.length) {
             play();
+            m = -1;
         }
     } else {
         console.log(gameOver(score));
     }
+    return list2[m];
 }
 
-function gameOver() {
+function gameOver(num) {
     
+}
+
+function on(element) {
+    element.classList.remove("off");
+}
+
+function off(element) {
+    element.classList.add("off");
 }

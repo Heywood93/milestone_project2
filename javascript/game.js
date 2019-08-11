@@ -8,7 +8,6 @@ var score = 0;
 
 function play() {
     list2= [];
-    var m = 0;
     
     list1[n] = shapes[Math.floor(Math.random() * 6)];
     n += 1;
@@ -26,25 +25,17 @@ function pressShape(id) {
     on(document.getElementById(id))
     setTimeout(off, 500, document.getElementById(id));
     list2[m] = id;
-    console.log(m);
-    console.log(list1);
-    console.log(list2);
     if (list2[m] == list1[m]) {
         score += 10*(1+(list1.length/10));
         $(".score #num").html(score);
-        console.log(score);
         if (list2.length == list1.length) {
             play();
             m = -1;
         }
     } else {
         console.log(gameOver(score));
+        gameOver(score);
     }
-    return list2[m];
-}
-
-function gameOver(num) {
-    
 }
 
 function on(element) {

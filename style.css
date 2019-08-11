@@ -14,7 +14,22 @@ header {
 .modal-content {
     background-color: #182e36;
     color: #f5f2d0;
-    opacity: 1.5;
+    opacity: 1;
+}
+
+.modal-header {
+    font-size: 26px;
+}
+
+.modal-body {
+    margin: 20px;
+    font-size: 20px;
+}
+
+#playerName {
+    text-align: center;
+    margin: 30px;
+    font-size: 20px;
 }
 
 main {

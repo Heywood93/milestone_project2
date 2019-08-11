@@ -8,13 +8,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
-
-    <!-- script here so page loads with rules, game-over and highscores hiden-->
-
-    <script type="text/javascript" src="javascript/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="javascript/rules.js"></script>
-    <script type="text/javascript" src="javascript/game-over.js"></script>
-
     <title>Memory Game</title>
 </head>
 
@@ -47,25 +40,24 @@
             <div class="modal-content">
                 <div class="modal-header row">
                     <h5 class="modal-title col text-center">Game Over</h5>
-                    <button class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                    <button>
+                        <span  onclick="close()" aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="row">
                         <div class="col">
-                            <p  id="message"> You scored <span class="score"></span>
-                            . Enter your name to see if you made the highscore board :)</p>
+                            <p id="message"> You scored <span class="score"></span> . Enter your name to see if you made the highscore board :)</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col text-center">
-                        <!-- space to enter name -->
+                            <input type="text" id="playerName" placeholder="Name">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col text-center">
-                            <button id="submitBtn">Submit</button>
+                            <button onclick="compareScore()" id="submitBtn">Submit</button>
                         </div>
                     </div>
                 </div>
@@ -130,7 +122,10 @@
             </div>
         </div>
     </footer>
-
+    <script type="text/javascript" src="javascript/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="javascript/rules.js"></script>
+    <script type="text/javascript" src="javascript/highscores.js"></script>
+    <script type="text/javascript" src="javascript/game-over.js"></script>
     <script type="text/javascript" src="javascript/game.js"></script>
 
 </body>

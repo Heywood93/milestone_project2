@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $("#highscores").hide();
     $("#highscoresBtn").click(function() {
-        $("#highscores").toggle("slow");
+        $("#highscores").slideToggle("slow");
     });
 });

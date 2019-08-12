@@ -3,12 +3,22 @@ body {
 }
 
 header {
-    margin-top: 30px;
+    margin-top: 20px;
+}
+
+
+
+h3 {
+    padding-bottom: 20px;
+}
+
+#rules > h4 {
+    text-align: justify;
 }
 
 #game-over {
     background-color: #20434f;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .modal-content {
@@ -18,10 +28,17 @@ header {
 }
 
 .modal-header {
-    font-size: 26px;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.modal-title {
+    font-size: 30px;
 }
 
 .modal-body {
+    text-align: center;
     margin: 20px;
     font-size: 20px;
 }
@@ -32,19 +49,51 @@ header {
     font-size: 20px;
 }
 
+#closeBtn {
+    margin-right: 10px;
+}
+
+#rules {
+    color: #f5f2d0;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    text-shadow: -2px 2px 2px #122126;
+    border-bottom: 1px solid;
+}
+
+#highscores {
+    margin-top: 20px;
+    text-align: center;
+    color: #f5f2d0;
+}
+
 main {
-    height: 85vh;
+    min-height: 80vh;
 }
 
 .row {
-    margin: 0;
-}
-.shape {
-    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
 }
 
-.fill {
-    max-height: 100%;
+.col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#game > .row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.col-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.shape {
+    text-align: center;
 }
 
 img {
@@ -60,5 +109,6 @@ img {
 .score {
     font-size: 20px;
     font-weight: bold;
-    color: white;
+    color: #f5f2d0;
+    text-shadow: -2px 2px 2px #122126;
 }

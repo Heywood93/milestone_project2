@@ -11,7 +11,7 @@
     <title>Memory Game</title>
 </head>
 
-<body>
+<body class="container-fluid">
     <header class="container-fluid">
         <div class="row">
             <div class="col">
@@ -26,78 +26,6 @@
             </div>
         </div>
     </header>
-    <div id="rules" class="row">
-        <div class="col">
-            <p>
-                <h3>Rules:</h3>
-                <h4>After pressing play a sequence will be shown, press on the shapes in the same order to increase the length of the sequence, press the shapes in the wrong order and it's game over! See if you can beat the top score :)</h4>
-            </p>
-        </div>
-    </div>
-
-    <div id="highscores" class="row">
-        <table class="table table-striped table-dark">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Score</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th scope="row">4</th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th scope="row">5</th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th scope="row">6</th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th scope="row">7</th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th scope="row">8</th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th scope="row">9</th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th scope="row">10</th>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
 
     <div id="game-over" class="modal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
@@ -129,9 +57,74 @@
         </div>
     </div>
 
-    <main class="container row align-items-center mx-auto">
-        <div class="col fill">
-            <div class="row justify-content-center fill">
+    <main class="container-fluid row  justify-content-center mx-auto">
+        <div id="rules" class="col-12 col-md-10 align-self-center">
+            <p>
+                <h3>Rules:</h3>
+                <h4>After pressing play a sequence will be shown, once the sequence has finished press the shapes in the same order, get it correct to increase the length of the sequence and see how far you can get, press the shapes in the wrong order and it's game over!</h4>
+            </p>
+        </div>
+
+        <div id="highscores" class="col-12 col-md-10">
+            <h3>Highscores</h3>
+            <table class="table table-striped table-dark">
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="game" class="col-12 align-self-center">
+            <div class="row justify-content-center">
                 <div class="col-4">
                     <div class="shape">
                         <img onclick="pressShape(this.id)" id="circle" class="off" src="images/circle.png"></img>
@@ -139,7 +132,7 @@
                 </div>
             </div>
 
-            <div class="row justify-content-center fill">
+            <div class="row justify-content-center">
                 <div class="col-4">
                     <div class="shape">
                         <img onclick="pressShape(this.id)" id="diamond" class="off" src="images/diamond.png"></img>
@@ -157,7 +150,7 @@
                 </div>
             </div>
 
-            <div class="row justify-content-center fill">
+            <div class="row justify-content-center">
                 <div class="col-4">
                     <div class="shape">
                         <img onclick="pressShape(this.id)" id="four_point" class="off" src="images/four_point.png"></img>
@@ -169,6 +162,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </main>
 

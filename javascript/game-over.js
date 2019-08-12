@@ -7,7 +7,6 @@ function gameOver(num) {
     $("#message .score").html(num);
 }
 
-function close() {
+$("#closeBtn").click(function () {
     $("#game-over").hide();
-    console.log($("#game-over").hide());
-}
+});

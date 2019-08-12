@@ -6,8 +6,13 @@ var m = -1;
 var el = new Array();
 var score = 0;
 
+$("#playBtn").click(reset());
+
+
 function play() {
-    list2= [];
+    list2 = [];
+    console.log(list2);
+    console.log(el);
     
     list1[n] = shapes[Math.floor(Math.random() * 6)];
     n += 1;
@@ -44,4 +49,13 @@ function on(element) {
 
 function off(element) {
     element.classList.add("off");
+}
+
+function reset() {
+    list1 = new Array();
+    list2 = new Array();
+    n = 0;
+    m = -1;
+    el = new Array();
+    score = 0;
 }

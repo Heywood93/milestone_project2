@@ -1,20 +1,19 @@
 var shapes = ["circle", "diamond", "star", "heart", "four_point", "triangle"];
 var list1 = new Array();
 var list2 = new Array();
-var n = 0;
+var n = 1;
 var m = -1;
 var el = new Array();
 var score = 0;
 
 $("#playBtn").click(function () {
-    console.log("reset");
     list1 = new Array();
     list2 = new Array();
-    n = 0;
+    list1[0] = shapes[Math.floor(Math.random() * 6)];
+    n = 1;
     m = -1;
     el = new Array();
     score = 0;
-    console.log(list1, list2, n, m, el, score);
     return;
 });
 
@@ -25,6 +24,9 @@ function play() {
 function game() {
     list2 = [];
     console.log(list1, list2, n, m, el, score);
+    
+    list1[n] = shapes[Math.floor(Math.random() * 6)];
+    n += 1;
     
     list1[n] = shapes[Math.floor(Math.random() * 6)];
     n += 1;

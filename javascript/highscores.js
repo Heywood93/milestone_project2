@@ -24,8 +24,8 @@ function compareScore(score) {
     $("#game-over").hide();
 
     var playerName = document.getElementById("playerName").value;
-    highscores[10][0] = score;
-    highscores[10][1] = playerName;
+    highscores[0][0] = score;
+    highscores[0][1] = playerName;
     highscores.sort();
     showScores();
     

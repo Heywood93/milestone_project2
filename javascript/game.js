@@ -14,7 +14,7 @@ $("#playBtn").click(function () {
     m = -1;
     el = new Array();
     score = 0;
-    console.log(list1, list2, n, m, el, score)
+    console.log(list1, list2, n, m, el, score);
     return;
 });
 
@@ -24,7 +24,7 @@ function play() {
 
 function game() {
     list2 = [];
-    console.log(list1, list2, n, m, el, score)
+    console.log(list1, list2, n, m, el, score);
     
     list1[n] = shapes[Math.floor(Math.random() * 6)];
     n += 1;
@@ -32,14 +32,14 @@ function game() {
     for (i = 0; i < list1.length; i++) {
         console.log(list1[i]);
         el[i] = document.getElementById(list1[i]);
-        setTimeout(on, 1500 * (i + 1), el[i]);
-        setTimeout(off, 1500 * (i + 1) + 1500, el[i]);
+        setTimeout(on, 500 + (1000*i), el[i]);
+        setTimeout(off, 1000 + (1000*i), el[i]);
     }
 }
 
 function pressShape(id) {
-    m += 1
-    on(document.getElementById(id))
+    m += 1;
+    on(document.getElementById(id));
     setTimeout(off, 500, document.getElementById(id));
     list2[m] = id;
     if (list2[m] == list1[m]) {
@@ -50,7 +50,6 @@ function pressShape(id) {
             m = -1;
         }
     } else {
-        console.log(gameOver(score));
         gameOver(score);
     }
 }

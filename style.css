@@ -6,8 +6,6 @@ header {
     margin-top: 20px;
 }
 
-
-
 h3 {
     padding-bottom: 20px;
 }
@@ -69,7 +67,7 @@ h3 {
 }
 
 main {
-    min-height: 80vh;
+    min-height: 85vh;
 }
 
 .row {

@@ -95,6 +95,10 @@ main {
     padding-right: 0;
 }
 
+#game {
+    padding: 10px;
+}
+
 #game > .row {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -116,7 +120,7 @@ img {
 }
 
 .off {
-    opacity: 0.6;
+    opacity: 0.4;
 }
 
 .score {
@@ -129,6 +133,10 @@ img {
 .level {
     font-size: 26px;
     font-weight: bold;
-    /*color: #f5f2d0;*/
     text-shadow: -2px 2px 2px #122126;
+    padding: 0;
+}
+
+.level > p {
+    margin-bottom: 0;
 }

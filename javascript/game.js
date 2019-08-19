@@ -2,7 +2,7 @@ $(document).ready(function () {
     $(".level").hide();
 });
 
-var shapes = ["circle", "diamond", "star", "heart", "four_point", "triangle"];
+var shapes = ["star", "circle", "pentagon", "four_point", "bolt", "diamond", "heart", "triangle", "six_point"];
 var list1 = new Array();
 var list2 = new Array();
 var n = 1;
@@ -19,7 +19,7 @@ $("#playBtn").click(function () {
     m = -1;
     el = new Array();
     score = 0;
-    var lvl = 0;
+    lvl = 0;
     return;
 });
 
@@ -34,10 +34,10 @@ function game() {
     list2 = [];
     console.log(list1, list2, n, m, el, score);
     
-    list1[n] = shapes[Math.floor(Math.random() * 6)];
+    list1[n] = shapes[Math.floor(Math.random() * 9)];
     n += 1;
     
-    list1[n] = shapes[Math.floor(Math.random() * 6)];
+    list1[n] = shapes[Math.floor(Math.random() * 9)];
     n += 1;
     
     for (i = 0; i < list1.length; i++) {

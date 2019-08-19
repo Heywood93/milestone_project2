@@ -94,8 +94,8 @@ main {
 }
 
 #game > .row {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .col-4 {
@@ -118,6 +118,13 @@ img {
 }
 
 .score {
+    font-size: 26px;
+    font-weight: bold;
+    color: #f5f2d0;
+    text-shadow: -2px 2px 2px #122126;
+}
+
+.level {
     font-size: 26px;
     font-weight: bold;
     color: #f5f2d0;

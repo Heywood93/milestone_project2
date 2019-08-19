@@ -25,13 +25,13 @@ button {
 
 #game-over {
     background-color: #20434f;
-    opacity: 0.8;
+    font-size: 20px;
 }
 
 .modal-content {
     background-color: #182e36;
     color: #f5f2d0;
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .modal-header {
@@ -47,8 +47,12 @@ button {
 .modal-body {
     text-align: center;
     margin: 20px;
-    font-size: 20px;
 }
+
+#goBox > .modal-dialog-centered {
+    font-size: 50px;
+}
+
 
 #playerName {
     text-align: center;
@@ -69,7 +73,7 @@ button {
     border-bottom: 1px solid;
 }
 
-#highscores {
+#topscores {
     margin-top: 20px;
     text-align: center;
     color: #f5f2d0;

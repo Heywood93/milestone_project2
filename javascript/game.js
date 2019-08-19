@@ -37,6 +37,8 @@ function game() {
         setTimeout(on, 500 + (1000*i), el[i]);
         setTimeout(off, 1000 + (1000*i), el[i]);
     }
+    
+    setTimeout(go, 500 + 1000*list1.length)
 }
 
 function pressShape(id) {
@@ -62,4 +64,13 @@ function on(element) {
 
 function off(element) {
     element.classList.add("off");
+}
+
+function go() {
+    $("#goBox").show();
+    setTimeout(hide, 300);
+}
+
+function hide() {
+    $("#goBox").hide();
 }

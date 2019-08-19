@@ -22,7 +22,7 @@
             </div>
             <div class="col">
                 <p class="text-center">
-                    <button id="highscoresBtn">Highscores</button>
+                    <button id="topscoresBtn">Top Scores</button>
                 </p>
             </div>
         </div>
@@ -40,7 +40,7 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col">
-                            <p id="message"> You scored <span class="score"></span> . Enter your name to see if you made the highscore board :)</p>
+                            <p id="message"> You scored <span class="score"></span> . Enter your name to see how your scores compare :)</p>
                         </div>
                     </div>
                     <div class="row">
@@ -58,65 +58,76 @@
         </div>
     </div>
 
-    <main class="container-fluid row  justify-content-center mx-auto">
+    <div id="goBox" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>GO!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="container-fluid row justify-content-center mx-auto">
         <div id="rules" class="col-12 col-md-10 align-self-center">
             <p>
                 <h3>Rules:</h3>
-                <h4>After pressing play a sequence will be shown, once the sequence has finished press the shapes in the same order, get it correct to increase the length of the sequence and see how far you can get, press the shapes in the wrong order and it's game over!</h4>
+                <h4>After pressing play a sequence will be shown, once the sequence has finished press the shapes in the same order, get it correct to increase the length of the sequence and see how far you can get, press the shapes in the wrong order and
+                    it's game over!</h4>
             </p>
         </div>
 
-        <div id="highscores" class="col-12 col-md-10">
-            <h3>Highscores</h3>
+        <div id="topscores" class="col-12 col-md-10">
+            <h3>Your Top Scores</h3>
             <table class="table table-striped table-dark">
                 <tbody>
-                    <tr>
-                        <th scope="row">1</th>
+                    <tr id="first">
+                        <th scope="row">1st</th>
                         <td id="firstPlayer"></td>
                         <td id="firstScore"></td>
                     </tr>
-                    <tr>
-                        <th scope="row">2</th>
+                    <tr id="second" class="topscore">
+                        <th scope="row">2nd</th>
                         <td id="secondPlayer"></td>
                         <td id="secondScore"></td>
                     </tr>
-                    <tr>
-                        <th scope="row">3</th>
+                    <tr id="third" class="topscore">
+                        <th scope="row">3rd</th>
                         <td id="thirdPlayer"></td>
                         <td id="thirdScore"></td>
                     </tr>
-                    <tr>
-                        <th scope="row">4</th>
+                    <tr id="fourth" class="topscore">
+                        <th scope="row">4th</th>
                         <td id="fourthPlayer"></td>
                         <td id="fourthScore"></td>
                     </tr>
-                    <tr>
-                        <th scope="row">5</th>
+                    <tr  id="fifth" class="topscore">
+                        <th scope="row">5th</th>
                         <td id="fifthPlayer"></td>
                         <td id="fifthScore"></td>
                     </tr>
-                    <tr>
-                        <th scope="row">6</th>
+                    <tr id="sixth" class="topscore">
+                        <th scope="row">6th</th>
                         <td id="sixthPlayer"></td>
                         <td id="sixthScore"></td>
                     </tr>
-                    <tr>
-                        <th scope="row">7</th>
+                    <tr  id="seventh" class="topscore">
+                        <th scope="row">7th</th>
                         <td id="seventhPlayer"></td>
                         <td id="seventhScore"></td>
                     </tr>
-                    <tr>
-                        <th scope="row">8</th>
+                    <tr  id="eighth" class="topscore">
+                        <th scope="row">8th</th>
                         <td id="eighthPlayer"></td>
                         <td id="eighthScore"></td>
                     </tr>
-                    <tr>
-                        <th scope="row">9</th>
+                    <tr id="ninth" class="topscore">
+                        <th scope="row">9th</th>
                         <td id="ninthPlayer"></td>
                         <td id="ninthScore"></td>
                     </tr>
-                    <tr>
-                        <th scope="row">10</th>
+                    <tr id="tenth" class="topscore">
+                        <th scope="row">10th</th>
                         <td id="tenthPlayer"></td>
                         <td id="tenthScore"></td>
                     </tr>
@@ -183,7 +194,7 @@
     </footer>
     <script type="text/javascript" src="javascript/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="javascript/rules.js"></script>
-    <script type="text/javascript" src="javascript/highscores.js"></script>
+    <script type="text/javascript" src="javascript/topscores.js"></script>
     <script type="text/javascript" src="javascript/game-over.js"></script>
     <script type="text/javascript" src="javascript/game.js"></script>
 

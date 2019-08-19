@@ -27,9 +27,20 @@ function compareScore(score) {
     var playerName = document.getElementById("playerName").value;
     topscores[0][0] = score;
     topscores[0][1] = playerName;
-    topscores.sort();
+
+    for (i = 0; i < 10; i++) {
+        if (topscores[i][0] > topscores[i + 1][0]) {
+            var number = topscores[i + 1][0];
+            var name = topscores[i + 1][1];
+            topscores[i + 1][0] = topscores[i][0];
+            topscores[i + 1][1] = topscores[i][1];
+            topscores[i][0] = number;
+            topscores[i][1] = name;
+            console.log(topscores);
+        }
+    }
     showScores();
-    
+
     $("#topscores").slideDown("slow");
 }
 

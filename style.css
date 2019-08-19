@@ -32,7 +32,6 @@ button {
 
 .modal-content {
     background-color: #182e36;
-    /*color: #f5f2d0;*/
 }
 
 .modal-header {
@@ -67,7 +66,6 @@ button {
 }
 
 #rules {
-    /*color: #f5f2d0;*/
     padding-right: 15px;
     padding-left: 15px;
     padding-bottom: 15px;
@@ -78,7 +76,6 @@ button {
 #topscores {
     margin-top: 20px;
     text-align: center;
-    /*color: #f5f2d0;*/
 }
 
 main {
@@ -126,7 +123,6 @@ img {
 .score {
     font-size: 26px;
     font-weight: bold;
-    /*color: #f5f2d0;*/
     text-shadow: -2px 2px 2px #122126;
 }
 

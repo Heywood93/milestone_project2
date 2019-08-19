@@ -1,5 +1,6 @@
 body {
-    background-color: #20434f;
+    background-color: #0f1d21;
+    color: #e6f7fc;
     font-family: 'Blinker', sans-serif;
 }
 
@@ -12,10 +13,10 @@ h3 {
 }
 
 button {
-    color: #122126;
+    color: #e6f7fc;
     font-size: 26px;
     border-radius: 5px;
-    background-image: linear-gradient(to bottom right, #8297b8, #b2bfd4, #858b94);
+    background-image: linear-gradient(to bottom right, #8fa3a8, #3d5054, #77a0a8);
     text-shadow: 1px -1px 1px #2d4a54;
 }
 
@@ -24,14 +25,14 @@ button {
 }
 
 #game-over {
-    background-color: #20434f;
+    background-color: #0f1d21;
     font-size: 20px;
+    opacity: 0.8;
 }
 
 .modal-content {
     background-color: #182e36;
-    color: #f5f2d0;
-    opacity: 0.8;
+    /*color: #f5f2d0;*/
 }
 
 .modal-header {
@@ -51,6 +52,7 @@ button {
 
 #goBox > .modal-dialog-centered {
     font-size: 50px;
+    opacity: 0.8;
 }
 
 
@@ -65,7 +67,7 @@ button {
 }
 
 #rules {
-    color: #f5f2d0;
+    /*color: #f5f2d0;*/
     padding-right: 15px;
     padding-left: 15px;
     padding-bottom: 15px;
@@ -76,7 +78,7 @@ button {
 #topscores {
     margin-top: 20px;
     text-align: center;
-    color: #f5f2d0;
+    /*color: #f5f2d0;*/
 }
 
 main {
@@ -120,13 +122,13 @@ img {
 .score {
     font-size: 26px;
     font-weight: bold;
-    color: #f5f2d0;
+    /*color: #f5f2d0;*/
     text-shadow: -2px 2px 2px #122126;
 }
 
 .level {
     font-size: 26px;
     font-weight: bold;
-    color: #f5f2d0;
+    /*color: #f5f2d0;*/
     text-shadow: -2px 2px 2px #122126;
 }
